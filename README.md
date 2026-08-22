@@ -32,5 +32,3 @@ The intermediate spreadsheets (SpreadSheet-01–06) contain evolving records and
 For questions or feedback, please contact the corresponding author.
 
 ---
-
-**Repository:** https://github.com/UbaidUllahResearch/LLMEvaluationSLR
