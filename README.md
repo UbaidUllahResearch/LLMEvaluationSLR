@@ -14,6 +14,10 @@ This repository contains the replication package for the systematic literature r
 | `SpreadSheet-06.xlsx` | 692 | Records remaining after title and abstract screening against predefined inclusion/exclusion criteria. |
 | `SpreadSheet-07.xlsx` | 295 | The final curated corpus of 295 studies selected through consensus and team review, forming the basis for all analyses presented in the paper. |
 
+## Figure
+
+The repository includes the PRISMA flow diagram illustrating the complete study selection process from initial identification to final inclusion.
+
 ## Contact
 
 For questions or feedback, please contact the corresponding author.
