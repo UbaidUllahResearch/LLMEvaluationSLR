@@ -14,19 +14,6 @@ This repository contains the replication package for the systematic literature r
 | `SpreadSheet-06.xlsx` | 692 | Records remaining after title and abstract screening against predefined inclusion/exclusion criteria. |
 | `SpreadSheet-07.xlsx` | 295 | The final curated corpus of 295 studies selected through consensus and team review, forming the basis for all analyses presented in the paper. |
 
-## Screening Progression
-
-The reduction from 2,006 to 295 studies reflects a deliberate, precision-oriented screening strategy:
-- **Broad initial search:** Maximized recall to avoid missing relevant work
-- **Progressive filtering:** Title/abstract screening → full-text assessment → consensus-based selection
-- **Final corpus:** 295 studies balancing breadth and analytical rigor
-
-## Usage
-
-To reproduce the analyses:
-
-The intermediate spreadsheets (SpreadSheet-01–06) contain evolving records and screening decisions developed as internal research artifacts. While included for transparency, they are not intended as a standalone replication package. The final curated dataset (`SpreadSheet-07.xlsx`) is the primary resource for verification and reuse.
-
 ## Contact
 
 For questions or feedback, please contact the corresponding author.
