@@ -14,23 +14,7 @@ The final review corpus comprises **295 primary studies**, which form the basis 
 
 This repository provides the search-result spreadsheets, intermediate datasets, final study corpus, and PRISMA flow diagram to support the transparency, verification, and reproducibility of the study selection and analysis process.
 
-## 2. Repository Structure
-
-The repository contains seven spreadsheets and the PRISMA flow diagram. Each spreadsheet corresponds to a particular stage of the search, screening, or study selection process.
-
-| File Name | Records | Description |
-|---|---:|---|
-| `SpreadSheet-01.xlsx` | — | Search results and extracted bibliographic information from Google Scholar. |
-| `SpreadSheet-02.xlsx` | — | Search results and extracted bibliographic information from IEEE Xplore. |
-| `SpreadSheet-03.xlsx` | — | Search results and extracted bibliographic information from ACM Digital Library. |
-| `SpreadSheet-04.xlsx` | — | Search results and extracted bibliographic information from ScienceDirect. |
-| `SpreadSheet-05.xlsx` | 2,006 | Unique records retained after relevance assessment and duplicate removal. |
-| `SpreadSheet-06.xlsx` | 692 | Studies retained after methodological eligibility assessment. |
-| `SpreadSheet-07.xlsx` | 295 | Final corpus of primary studies included in the systematic literature review. |
-
-The first four spreadsheets document the search results and associated bibliographic information from the selected digital libraries. The remaining spreadsheets represent progressively refined datasets obtained during the study selection process.
-
-## 3. Search Strategy and Initial Identification
+## 2. Search Strategy and Initial Identification
 
 The systematic search was conducted using **eight search-query variations** across four digital libraries:
 
@@ -38,6 +22,8 @@ The systematic search was conducted using **eight search-query variations** acro
 2. IEEE Xplore Digital Library
 3. ACM Digital Library
 4. ScienceDirect
+
+### 2.1. Initial Manual Identification Screening and Saturation-Based Stopping Rule
 
 The initial search returned **1,198,779 raw search results**, distributed across the four digital libraries as follows:
 
@@ -49,11 +35,8 @@ The initial search returned **1,198,779 raw search results**, distributed across
 | ScienceDirect | 423,977 |
 | **Total** | **1,198,779** |
 
-These figures represent the raw search-result counts reported by the respective digital libraries. They should not be interpreted as the number of records individually examined by the researchers or as the number of unique potentially eligible studies.
+These figures represent the raw search-result counts reported by the respective digital libraries. The large retrieval volume resulted from the use of broad search strings intended to maximize coverage and reduce the likelihood of overlooking relevant publications. This was particularly evident in Google Scholar, which indexes scholarly publications from multiple publishers and research platforms and retrieves records through broad keyword matching across bibliographic information and indexed content. Consequently, its search results provide wider coverage than collections restricted to individual publishers or digital libraries.
 
-The large retrieval volume resulted from the use of broad search strings intended to maximize coverage and reduce the likelihood of overlooking relevant publications. This was particularly evident in Google Scholar, which indexes scholarly publications from multiple publishers and research platforms and retrieves records through broad keyword matching across bibliographic information and indexed content. Consequently, its search results provide wider coverage than collections restricted to individual publishers or digital libraries.
-
-### 3.1. Initial Manual Screening and Saturation-Based Stopping Rule
 
 Given the exceptionally large retrieval volume, manually examining every raw search result was not practically feasible. Therefore, an initial manual screening strategy based on a **saturation-based stopping rule** was applied.
 
@@ -72,15 +55,11 @@ During this stage, records clearly outside the scope of the review were not reta
 
 These studies were excluded because their primary contributions concerned domain-specific applications rather than the evaluation of LLM capabilities, performance, limitations, robustness, or evaluation methodologies.
 
-The initial screening resulted in **10,079 records** being retained and consolidated for subsequent relevance assessment. Thus, the 1,198,779 raw search results represent the initial database retrieval, whereas the 10,079 records represent the records examined and retained through the initial screening procedure.
+**Researcher involvement:** One researcher conducted the initial identification and title-and-abstract screening using the predefined review objectives and saturation-based stopping rule.
 
-## 4. Study Selection Process
+### 2.2. Initial Screening
 
-Following initial identification, the study selection process comprised six stages: initial identification, relevance assessment, duplicate identification, methodological eligibility assessment, in-depth domain-specific analysis, and final inclusion.
-
-### 4.1. Stage 1: Identification and Initial Screening
-
-The initial search produced 1,198,779 raw search results. Following the saturation-based manual screening procedure, **10,079 records** were retained and consolidated from the four digital libraries.
+The **10,079 records** were retained and consolidated from the four digital libraries.
 
 The distribution of these records was:
 
@@ -94,23 +73,8 @@ The distribution of these records was:
 
 Google Scholar contributed the largest number of retained records, partly because its indexing covers scholarly publications from multiple publishers and digital libraries. In contrast, platforms such as IEEE Xplore and ACM Digital Library primarily provide access to publications within their respective digital collections.
 
-**Researcher involvement:** One researcher conducted the initial identification and title-and-abstract screening using the predefined review objectives and saturation-based stopping rule.
 
-### 4.2. Stage 2: Relevance Assessment
-
-The 10,079 consolidated records were assessed for their relevance to LLM evaluation. Records were retained when they included an assessment of LLM performance, capabilities, limitations, reliability, factuality, robustness, security, safety, alignment, reasoning, generation quality, code-related capabilities, hallucination, bias, toxicity, instruction following, efficiency, or the effectiveness of an evaluation methodology.
-
-Studies that exclusively applied LLMs to downstream tasks without evaluating model performance or contributing to an evaluation methodology were excluded.
-
-The resulting selection was:
-
-| Selection Step | Number of Records |
-|---|---:|
-| Records assessed for relevance | 10,079 |
-| Records excluded as not relevant to LLM evaluation | 7,856 |
-| Records retained for further processing | **2,223** |
-
-### 4.3. Stage 3: Duplicate Identification and Removal
+### 4.3. Duplicate Identification and Removal
 
 Duplicate identification and removal were performed after the relevance assessment and before methodological eligibility screening.
 
@@ -134,7 +98,7 @@ The duplicate-removal process resulted in the following progression:
 
 Consequently, `SpreadSheet-05.xlsx` contains the **2,006 unique records** obtained after removing the 217 manually verified duplicates from the 2,223 records retained following relevance assessment.
 
-### 4.4. Stage 4: Methodological Eligibility Assessment
+### 4.4. Eligibility 
 
 The 2,006 unique records were subsequently assessed against the methodological eligibility criteria of the review.
 
@@ -152,7 +116,7 @@ The resulting selection was:
 
 Accordingly, `SpreadSheet-06.xlsx` contains the 692 studies retained after methodological eligibility assessment.
 
-### 4.5. Stage 5: In-Depth Domain-Specific Analysis
+### 4.5. In-Depth Analysis
 
 The 692 studies retained after methodological screening were subjected to further analysis to determine whether they primarily addressed LLM evaluation within the predefined research domains of Software Engineering, Cybersecurity, and Computer Science.
 
@@ -166,7 +130,7 @@ The resulting selection was:
 | Studies excluded for not meeting the predefined domain criteria | 397 |
 | Studies retained for final inclusion | **295** |
 
-### 4.6. Stage 6: Final Inclusion
+### 4.6. Final Inclusion
 
 The final selection resulted in a corpus of **295 primary studies**, which constitutes the empirical foundation of the systematic literature review.
 
