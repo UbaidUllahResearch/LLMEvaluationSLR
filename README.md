@@ -23,6 +23,9 @@ The systematic search was conducted using **eight search-query variations** acro
 3. ACM Digital Library
 4. ScienceDirect
 
+The repository includes the PRISMA-style workflow diagram illustrating the complete search strategy and selection process, from initial database identification to final inclusion. The diagram summarizes the numerical progression across the six stages:
+
+
 ### 2.1. Initial Manual Identification Screening and Saturation-Based Stopping Rule
 
 The initial search returned **1,198,779 raw search results**, distributed across the four digital libraries as follows:
@@ -180,11 +183,7 @@ For completeness, the initial relevance assessment began with 10,079 records, of
 
 This distinction clarifies the role of the preliminary search files and establishes the relationship between the three principal datasets used in the systematic review.
 
-## 4. PRISMA Flow Diagram
-
-The repository includes the PRISMA-style workflow diagram illustrating the complete study selection process, from initial database identification to final inclusion. The diagram summarizes the numerical progression across the six stages:
-
-## 6. Reproducibility and Transparency
+## 5. Reproducibility and Transparency
 
 The replication package is intended to support the verification of the study selection process and the findings reported in the manuscript.
 
@@ -202,7 +201,7 @@ The intermediate spreadsheets should be interpreted according to their respectiv
 
 Together, these materials provide a transparent account of how the final corpus was established and how the included studies underpin the review's findings.
 
-## 7. Repository Access
+## 6. Repository Access
 
 The replication package is publicly available at:
 
@@ -211,6 +210,6 @@ https://github.com/UbaidUllahResearch/LLMEvaluationSLR
 
 Researchers can use the provided datasets to inspect the study selection process, verify the final corpus, examine the methodological taxonomy, and extend the analysis to additional LLM evaluation studies.
 
-## 8. Contact
+## 7. Contact
 
 For questions, comments, or further information concerning the replication package and the systematic literature review, please contact the corresponding author.
