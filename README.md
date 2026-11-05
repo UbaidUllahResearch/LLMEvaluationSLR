@@ -76,6 +76,7 @@ Records excluded from 10,079 as not relevant to LLM evaluation are **7,856**, Re
 
 | Selection Step | Number of Records |
 |---|---:|
+| Total Records | 10,079 |
 | Non relevant record to LLM evaluation | 7,856 |
 | Record Left for further processing | **2,223** |
 
