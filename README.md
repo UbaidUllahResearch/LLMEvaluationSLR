@@ -74,7 +74,7 @@ The distribution of these records was:
 Google Scholar contributed the largest number of retained records, partly because its indexing covers scholarly publications from multiple publishers and digital libraries. In contrast, platforms such as IEEE Xplore and ACM Digital Library primarily provide access to publications within their respective digital collections.
 
 
-### 4.3. Duplicate Identification and Removal
+### 2.3. Duplicate Identification and Removal
 
 Duplicate identification and removal were performed after the relevance assessment and before methodological eligibility screening.
 
@@ -98,7 +98,7 @@ The duplicate-removal process resulted in the following progression:
 
 Consequently, `SpreadSheet-05.xlsx` contains the **2,006 unique records** obtained after removing the 217 manually verified duplicates from the 2,223 records retained following relevance assessment.
 
-### 4.4. Eligibility 
+### 2.4. Eligibility 
 
 The 2,006 unique records were subsequently assessed against the methodological eligibility criteria of the review.
 
@@ -116,7 +116,7 @@ The resulting selection was:
 
 Accordingly, `SpreadSheet-06.xlsx` contains the 692 studies retained after methodological eligibility assessment.
 
-### 4.5. In-Depth Analysis
+### 2.5. In-Depth Analysis
 
 The 692 studies retained after methodological screening were subjected to further analysis to determine whether they primarily addressed LLM evaluation within the predefined research domains of Software Engineering, Cybersecurity, and Computer Science.
 
@@ -130,7 +130,7 @@ The resulting selection was:
 | Studies excluded for not meeting the predefined domain criteria | 397 |
 | Studies retained for final inclusion | **295** |
 
-### 4.6. Final Inclusion
+### 2.6. Final Inclusion
 
 The final selection resulted in a corpus of **295 primary studies**, which constitutes the empirical foundation of the systematic literature review.
 
@@ -145,7 +145,9 @@ This analysis revealed four recurring evaluation paradigms:
 
 The resulting taxonomy comprises four principal paradigms and 23 subcategories. These categories were derived inductively from recurring methodological patterns in the included studies rather than being predefined during the study selection process.
 
-## 5. Relationship Between the Intermediate Datasets
+Accordingly, SpreadSheet-07.xlsx contains the 295 studies.
+
+## 3. Relationship Between the Intermediate Datasets
 
 The seven spreadsheets document the progression from the initial database searches to the final review corpus.
 
@@ -166,7 +168,7 @@ The numerical progression is:
 
 This progression explains how the relevance assessment, duplicate removal, methodological screening, and domain-specific eligibility criteria contributed to the construction of the final review corpus.
 
-## 6. Researcher Involvement
+## 4. Researcher Involvement
 
 The study selection and analysis involved different levels of researcher participation across the review stages.
 
@@ -176,7 +178,7 @@ The study selection and analysis involved different levels of researcher partici
 
 This distinction documents the researchers' involvement at the different stages without implying that the initial screening was independently conducted by multiple researchers.
 
-## 7. PRISMA Flow Diagram
+## 5. PRISMA Flow Diagram
 
 The repository includes the PRISMA-style flow diagram illustrating the complete study selection process, from initial database identification to final inclusion.
 
@@ -197,7 +199,7 @@ The diagram summarizes the numerical progression across the six stages:
 
 **Important clarification:** The figure of 1,198,779 represents the raw search-result counts reported by the four digital libraries. It does not represent the number of records individually examined by the researchers. The initial manual screening employed a saturation-based stopping rule and resulted in 10,079 records being retained for subsequent relevance assessment.
 
-## 8. Reproducibility and Transparency
+## 6. Reproducibility and Transparency
 
 The replication package is intended to support the verification of the study selection process and the findings reported in the manuscript.
 
@@ -215,7 +217,7 @@ The intermediate spreadsheets should be interpreted according to their respectiv
 
 Together, these materials provide a transparent account of how the final corpus was established and how the included studies underpin the review's findings.
 
-## 9. Repository Access
+## 7. Repository Access
 
 The replication package is publicly available at:
 
@@ -224,6 +226,6 @@ https://github.com/UbaidUllahResearch/LLMEvaluationSLR
 
 Researchers can use the provided datasets to inspect the study selection process, verify the final corpus, examine the methodological taxonomy, and extend the analysis to additional LLM evaluation studies.
 
-## 10. Contact
+## 8. Contact
 
 For questions, comments, or further information concerning the replication package and the systematic literature review, please contact the corresponding author.
