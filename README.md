@@ -168,17 +168,7 @@ The numerical progression is:
 
 This progression explains how the relevance assessment, duplicate removal, methodological screening, and domain-specific eligibility criteria contributed to the construction of the final review corpus.
 
-## 4. Researcher Involvement
-
-The study selection and analysis involved different levels of researcher participation across the review stages.
-
-- **Initial identification and screening:** One researcher conducted the initial search-result identification and manual title-and-abstract screening using the saturation-based stopping rule.
-- **Subsequent assessment and data extraction:** Two researchers participated in the subsequent stages, including the assessment and extraction of study information.
-- **Final synthesis:** The final corpus of 295 studies provided the basis for the qualitative synthesis, taxonomy construction, and analyses reported in the manuscript.
-
-This distinction documents the researchers' involvement at the different stages without implying that the initial screening was independently conducted by multiple researchers.
-
-## 5. PRISMA Flow Diagram
+## 4. PRISMA Flow Diagram
 
 The repository includes the PRISMA-style flow diagram illustrating the complete study selection process, from initial database identification to final inclusion.
 
@@ -187,14 +177,10 @@ The diagram summarizes the numerical progression across the six stages:
 | Stage | Description | Records |
 |---|---|---:|
 | Identification | Raw search results retrieved from four digital libraries | 1,198,779 |
-| Initial screening | Records examined and retained through the saturation-based procedure | 10,079 |
-| Relevance assessment | Records excluded as not relevant to LLM evaluation | 7,856 |
-| Relevance assessment | Records retained for further processing | 2,223 |
+| Screening | Records examined (10,079), Records excluded as not relevant to LLM evaluation (7,856), Records retained for further processing (2,223).
 | Duplicate removal | Duplicate records identified and removed | 217 |
-| Unique records | Records retained after duplicate removal | 2,006 |
-| Methodological eligibility | Studies excluded for not focusing on LLM evaluation methodologies | 1,314 |
-| Further assessment | Studies retained for domain-specific eligibility assessment | 692 |
-| Domain-specific eligibility | Studies excluded for not meeting the predefined domain criteria | 397 |
+| Eligibility | Records retained after duplicate removal (2,006), Studies excluded for not focusing on LLM evaluation methodologies (1,314).
+| In-Depth Analysis | Studies retained for domain-specific eligibility assessment (692), Studies excluded for not meeting the predefined domain criteria (397).
 | Final inclusion | Primary studies included in the review | **295** |
 
 **Important clarification:** The figure of 1,198,779 represents the raw search-result counts reported by the four digital libraries. It does not represent the number of records individually examined by the researchers. The initial manual screening employed a saturation-based stopping rule and resulted in 10,079 records being retained for subsequent relevance assessment.
