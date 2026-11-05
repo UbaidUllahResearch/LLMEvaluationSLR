@@ -14,7 +14,7 @@ The final review corpus comprises **295 primary studies**, which form the basis 
 
 This repository provides the search-result spreadsheets, intermediate datasets, final study corpus, and PRISMA flow diagram to support the transparency, verification, and reproducibility of the study selection and analysis process.
 
-## 2. Search Strategy and Initial Identification
+## 2. Search Strategy for SLR
 
 The systematic search was conducted using **eight search-query variations** across four digital libraries:
 
@@ -112,7 +112,7 @@ The resulting selection was:
 |---|---:|
 | Unique records assessed | 2,006 |
 | Studies excluded | 1,314 |
-| Studies retained for further assessment | **692** |
+| Studies retained for In-Depth Analysis | **692** |
 
 Accordingly, `SpreadSheet-06.xlsx` contains the 692 studies retained after methodological eligibility assessment.
 
