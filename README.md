@@ -178,7 +178,7 @@ This analysis revealed four recurring evaluation paradigms:
 
 The resulting taxonomy comprises four principal paradigms and 23 subcategories. These categories were derived inductively from recurring methodological patterns in the included studies rather than being predefined during the study selection process.
 
-Accordingly, SpreadSheet-07.xlsx contains the 295 studies.
+Accordingly, [`SpreadSheet-07.xlsx`](SpreadSheet-07.xlsx) contains the 295 studies.
 
 ## 3. Relationship Between the Intermediate Datasets
 
