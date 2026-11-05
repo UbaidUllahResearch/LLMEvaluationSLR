@@ -181,18 +181,7 @@ This distinction clarifies the role of the preliminary search files and establis
 
 ## 4. PRISMA Flow Diagram
 
-The repository includes the PRISMA-style flow diagram illustrating the complete study selection process, from initial database identification to final inclusion.
-
-The diagram summarizes the numerical progression across the six stages:
-
-| Stage | Description | Records |
-|---|---|---:|
-| Identification | Raw search results retrieved from four digital libraries | 1,198,779 |
-| Screening | Records examined (10,079), Records excluded from 10,079 as not relevant to LLM evaluation (7,856), Records retained for further processing (2,223) | 2,223 |
-| Duplicate removal | Duplicate records identified and removed | 217 |
-| Eligibility | Records retained after duplicate removal (2,006), Studies excluded for not focusing on LLM evaluation methodologies (1,314). | 692 |
-| In-Depth Analysis | Studies retained for domain-specific eligibility assessment (692), Studies excluded for not meeting the predefined domain criteria (397).   | 295 |
-| Final inclusion | Primary studies included in the review | **295** |
+The repository includes the PRISMA-style workflow diagram illustrating the complete study selection process, from initial database identification to final inclusion. The diagram summarizes the numerical progression across the six stages:
 
 ## 6. Reproducibility and Transparency
 
