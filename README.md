@@ -112,21 +112,42 @@ Consequently, `SpreadSheet-05.xlsx` contains the **2,006 unique records** obtain
 
 ### 2.4. Eligibility 
 
-The 2,006 unique records were subsequently assessed against the methodological eligibility criteria of the review.
+The 2,006 unique records were assessed against the methodological eligibility criteria to determine whether LLM evaluation constituted a substantive component of each study. The assessment considered several methodological aspects, including evaluation objectives, assessment mechanisms, metrics, validation techniques, benchmarks, evaluation frameworks, experimental procedures, datasets, and reported empirical findings.
 
-This assessment examined whether LLM evaluation constituted a substantive component of each study. The examined methodological aspects included evaluation objectives, assessment mechanisms, metrics, validation techniques, benchmarks, evaluation frameworks, experimental procedures, datasets, and empirical findings.
+Studies were excluded if LLM evaluation was merely incidental to the application under investigation or if they did not make a substantive methodological contribution to LLM evaluation.
 
-Studies in which evaluation was only incidental to an LLM-based application, or which did not make a substantive methodological contribution to LLM evaluation, were excluded.
-
-The resulting selection was:
+The assessment resulted in the following selection:
 
 | Selection Step | Number of Studies |
 |---|---:|
 | Unique records assessed | 2,006 |
 | Studies excluded | 1,314 |
-| Studies retained for In-Depth Analysis | **692** |
+| Studies retained for further in-depth analysis | **692** |
 
-Accordingly, `SpreadSheet-06.xlsx` contains the 692 studies retained after methodological eligibility assessment.
+A structured data extraction schema was established to systematically collect information from the studies. The extracted information is organized into the following fields:
+
+| **Field** | **Description** |
+|---|---|
+| Paper Title | Title of the study as published. |
+| Author(s) | List of authors formatted according to APA style. |
+| Description | Concise summary outlining the study's focus and scope. |
+| Method Used | Primary method or technique applied in the study. |
+| Type of Study | Classification of the study, such as empirical, survey, SLR, or theoretical. |
+| Experimental Dataset Used | Dataset(s) or benchmark(s) employed for evaluation. |
+| Validation Techniques | Procedures used to validate the reported results, such as cross-validation. |
+| Findings of the Study | Main outcomes and insights reported in the study. |
+| Year of Publication | Year in which the study was published. |
+| Publication Cite | Publication venue, such as a journal, conference, or preprint source. |
+| Methodology | Primary LLM evaluation paradigm: Human, Automated, Adversarial, or Benchmark-driven. |
+| Areas of the Study | Research domain(s) addressed: Cybersecurity, Software Engineering, and/or Computer Science. |
+| Search Keyword Used | Exact keyword combination used to retrieve the study. |
+| Search Platform Used | Database or digital library from which the study was retrieved. |
+| Number of Citations | Number of citations recorded for the study. |
+
+This schema provides a consistent basis for comparing the selected studies and synthesizing LLM evaluation practices across the three research domains. It also supports the classification of studies according to the four evaluation paradigms and the identification of recurring methodological patterns.
+
+[`SpreadSheet-06.xlsx`](SpreadSheet-06.xlsx) contains the **692 studies** retained after methodological eligibility assessment. These studies were subsequently subjected to in-depth analysis and domain-specific assessment to determine their relevance to the predefined research domains.
+
 
 ### 2.5. In-Depth Analysis
 
