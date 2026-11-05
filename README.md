@@ -12,11 +12,11 @@ The study systematically investigates evaluation methodologies for Large Languag
 
 The final review corpus comprises **295 primary studies**, which form the basis of the qualitative synthesis, methodological taxonomy, quantitative analysis, and discussion presented in the paper.
 
-This repository provides the intermediate datasets, bibliographic records, final study corpus, and PRISMA flow diagram to support the transparency, verification, and reproducibility of the study selection and analysis process.
+This repository provides the search-result spreadsheets, intermediate datasets, final study corpus, and PRISMA flow diagram to support the transparency, verification, and reproducibility of the study selection and analysis process.
 
 ## 2. Repository Structure
 
-The repository contains seven intermediate spreadsheets and the PRISMA flow diagram. Each spreadsheet corresponds to a particular stage of the search, screening, or study selection process.
+The repository contains seven spreadsheets and the PRISMA flow diagram. Each spreadsheet corresponds to a particular stage of the search, screening, or study selection process.
 
 | File Name | Records | Description |
 |---|---:|---|
@@ -28,137 +28,202 @@ The repository contains seven intermediate spreadsheets and the PRISMA flow diag
 | `SpreadSheet-06.xlsx` | 692 | Studies retained after methodological eligibility assessment. |
 | `SpreadSheet-07.xlsx` | 295 | Final corpus of primary studies included in the systematic literature review. |
 
-The first four spreadsheets document the search results and associated bibliographic information from the selected digital libraries. The remaining spreadsheets represent the progressively refined datasets obtained during the study selection process.
+The first four spreadsheets document the search results and associated bibliographic information from the selected digital libraries. The remaining spreadsheets represent progressively refined datasets obtained during the study selection process.
 
-## 3. Search and Study Selection Process
+## 3. Search Strategy and Initial Identification
 
-The systematic search was conducted using eight search-query variations across four digital libraries:
+The systematic search was conducted using **eight search-query variations** across four digital libraries:
 
 1. Google Scholar
 2. IEEE Xplore Digital Library
 3. ACM Digital Library
 4. ScienceDirect
 
-The search returned **1,198,779 raw records** across the four platforms. This figure represents the total number of search results reported by the digital libraries and should not be interpreted as the number of records individually examined by the researchers.
+The initial search returned **1,198,779 raw search results**, distributed across the four digital libraries as follows:
 
-Given the exceptionally large retrieval volume, an initial manual screening strategy based on a saturation-based stopping rule was applied. Titles and abstracts were examined progressively, and screening for each query was discontinued when two consecutive result pages yielded no new relevant studies.
+| Digital Library | Raw Search Results |
+|---|---:|
+| Google Scholar | 591,400 |
+| IEEE Xplore | 24,877 |
+| ACM Digital Library | 158,525 |
+| ScienceDirect | 423,977 |
+| **Total** | **1,198,779** |
 
-The subsequent study selection process comprised the following stages.
+These figures represent the raw search-result counts reported by the respective digital libraries. They should not be interpreted as the number of records individually examined by the researchers or as the number of unique potentially eligible studies.
 
-### 3.1. Initial Screening and Relevance Assessment
+The large retrieval volume resulted from the use of broad search strings intended to maximize coverage and reduce the likelihood of overlooking relevant publications. This was particularly evident in Google Scholar, which indexes scholarly publications from multiple publishers and research platforms and retrieves records through broad keyword matching across bibliographic information and indexed content. Consequently, its search results provide wider coverage than collections restricted to individual publishers or digital libraries.
 
-Following the initial search and saturation-based screening procedure, the retrieved records were consolidated for further relevance assessment.
+### 3.1. Initial Manual Screening and Saturation-Based Stopping Rule
 
-A total of **10,079 records** were assessed to determine their relevance to LLM evaluation. Records were considered relevant if they included an evaluation component addressing LLM performance, capabilities, limitations, reliability, factuality, robustness, security, safety, alignment, reasoning, generation quality, code-related capabilities, hallucination, bias, toxicity, instruction following, efficiency, or evaluation methodology.
+Given the exceptionally large retrieval volume, manually examining every raw search result was not practically feasible. Therefore, an initial manual screening strategy based on a **saturation-based stopping rule** was applied.
 
-Studies focusing exclusively on the application of LLMs to downstream tasks without evaluating model performance or contributing to an evaluation methodology were excluded.
+One researcher examined titles and abstracts from the search-result pages for each query and digital library. Screening proceeded from the initial result pages, where records were generally more closely aligned with LLM evaluation, towards subsequent pages, where the relevance of the results progressively declined.
 
-Following this assessment:
+This decline was associated with the broad retrieval behavior of the search engines, which increasingly returned records containing individual query terms, such as *large*, *language*, *model*, *LLM*, *evaluation*, *performance*, *benchmarking*, and *assessment*, without necessarily addressing LLM evaluation.
 
-- Records assessed for relevance: **10,079**
-- Records excluded as not relevant to LLM evaluation: **7,856**
-- Records retained for further processing: **2,223**
+For each query, screening was discontinued when **two consecutive search-result pages yielded no new relevant studies**. This operational stopping rule reduced the examination of increasingly irrelevant results while retaining potentially relevant records.
 
-### 3.2. Duplicate Identification and Removal
+During this stage, records clearly outside the scope of the review were not retained. These included studies primarily concerned with applications of LLMs in:
 
-Duplicate identification and removal were conducted after the initial relevance assessment and before methodological eligibility screening.
+- **Natural and Physical Sciences:** physics, chemistry, and materials science.
+- **Life Sciences and Healthcare:** biomedicine, clinical informatics, genomics, and epidemiology.
+- **Applied Engineering and Industry:** civil, mechanical, aerospace, and petroleum engineering.
+- **Social Sciences and Humanities:** law, economics, and sociology.
 
-This sequencing was adopted because the initial retrieval contained a substantial number of records that were subsequently excluded as irrelevant to the review. Performing duplicate detection across the entire raw retrieval set would therefore have required processing a considerably larger collection, including records that would not proceed to subsequent screening. Furthermore, duplicate identification involved manual verification to minimize the risk of removing distinct studies. Conducting this verification after the relevance assessment made the process more manageable while preserving the integrity of the retained records.
+These studies were excluded because their primary contributions concerned domain-specific applications rather than the evaluation of LLM capabilities, performance, limitations, robustness, or evaluation methodologies.
+
+The initial screening resulted in **10,079 records** being retained and consolidated for subsequent relevance assessment. Thus, the 1,198,779 raw search results represent the initial database retrieval, whereas the 10,079 records represent the records examined and retained through the initial screening procedure.
+
+## 4. Study Selection Process
+
+Following initial identification, the study selection process comprised six stages: initial identification, relevance assessment, duplicate identification, methodological eligibility assessment, in-depth domain-specific analysis, and final inclusion.
+
+### 4.1. Stage 1: Identification and Initial Screening
+
+The initial search produced 1,198,779 raw search results. Following the saturation-based manual screening procedure, **10,079 records** were retained and consolidated from the four digital libraries.
+
+The distribution of these records was:
+
+| Digital Library | Records Retained |
+|---|---:|
+| Google Scholar | 5,400 |
+| IEEE Xplore | 1,530 |
+| ACM Digital Library | 1,516 |
+| ScienceDirect | 1,633 |
+| **Total** | **10,079** |
+
+Google Scholar contributed the largest number of retained records, partly because its indexing covers scholarly publications from multiple publishers and digital libraries. In contrast, platforms such as IEEE Xplore and ACM Digital Library primarily provide access to publications within their respective digital collections.
+
+**Researcher involvement:** One researcher conducted the initial identification and title-and-abstract screening using the predefined review objectives and saturation-based stopping rule.
+
+### 4.2. Stage 2: Relevance Assessment
+
+The 10,079 consolidated records were assessed for their relevance to LLM evaluation. Records were retained when they included an assessment of LLM performance, capabilities, limitations, reliability, factuality, robustness, security, safety, alignment, reasoning, generation quality, code-related capabilities, hallucination, bias, toxicity, instruction following, efficiency, or the effectiveness of an evaluation methodology.
+
+Studies that exclusively applied LLMs to downstream tasks without evaluating model performance or contributing to an evaluation methodology were excluded.
+
+The resulting selection was:
+
+| Selection Step | Number of Records |
+|---|---:|
+| Records assessed for relevance | 10,079 |
+| Records excluded as not relevant to LLM evaluation | 7,856 |
+| Records retained for further processing | **2,223** |
+
+### 4.3. Stage 3: Duplicate Identification and Removal
+
+Duplicate identification and removal were performed after the relevance assessment and before methodological eligibility screening.
+
+This sequencing was adopted because the initial retrieval contained a substantial proportion of records that were subsequently excluded as irrelevant. Performing duplicate detection across the entire raw retrieval set would therefore have required processing a considerably larger collection, including records that would not proceed to subsequent screening. Furthermore, duplicate identification required manual verification to minimize the risk of removing distinct studies.
 
 Duplicate detection was performed using Microsoft Excel. Potential duplicates were identified by sorting and filtering records according to their titles, with particular attention to differences in capitalization, punctuation, spacing, and formatting. Each flagged record was subsequently examined manually before removal.
 
 Records were considered duplicates when they met one or more of the following criteria:
 
 - Exact title match.
-- Highly similar titles or minor formatting differences, referring to the same publication and confirmed through the first author's name and other bibliographic information.
+- Highly similar titles or minor formatting differences referring to the same publication, confirmed through the first author's name and other bibliographic information.
 - Identical DOI, where available.
 
 The duplicate-removal process resulted in the following progression:
 
-| Selection step | Number of records |
+| Selection Step | Number of Records |
 |---|---:|
 | Records retained after relevance assessment | 2,223 |
 | Duplicate records identified and removed | 217 |
 | Unique records retained after duplicate removal | **2,006** |
 
-Consequently, `SpreadSheet-05.xlsx` contains the **2,006 unique records** obtained after removing the 217 manually verified duplicates from the initial set of 2,223 records.
+Consequently, `SpreadSheet-05.xlsx` contains the **2,006 unique records** obtained after removing the 217 manually verified duplicates from the 2,223 records retained following relevance assessment.
 
-### 3.3. Methodological Eligibility Assessment
+### 4.4. Stage 4: Methodological Eligibility Assessment
 
 The 2,006 unique records were subsequently assessed against the methodological eligibility criteria of the review.
 
-This assessment examined whether the studies made a substantive contribution to LLM evaluation methodologies. Relevant methodological aspects included evaluation objectives, assessment mechanisms, metrics, validation techniques, benchmarks, evaluation frameworks, experimental procedures, datasets, and empirical findings.
+This assessment examined whether LLM evaluation constituted a substantive component of each study. The examined methodological aspects included evaluation objectives, assessment mechanisms, metrics, validation techniques, benchmarks, evaluation frameworks, experimental procedures, datasets, and empirical findings.
 
 Studies in which evaluation was only incidental to an LLM-based application, or which did not make a substantive methodological contribution to LLM evaluation, were excluded.
 
 The resulting selection was:
 
-- Unique records assessed: **2,006**
-- Studies excluded: **1,314**
-- Studies retained for further assessment: **692**
+| Selection Step | Number of Studies |
+|---|---:|
+| Unique records assessed | 2,006 |
+| Studies excluded | 1,314 |
+| Studies retained for further assessment | **692** |
 
-The 692 retained studies were then examined against the predefined domain-specific eligibility criteria.
+Accordingly, `SpreadSheet-06.xlsx` contains the 692 studies retained after methodological eligibility assessment.
 
-### 3.4. Domain-Specific Eligibility Assessment and Final Inclusion
+### 4.5. Stage 5: In-Depth Domain-Specific Analysis
 
-The final eligibility assessment focused on studies primarily concerned with LLM evaluation within the predefined research domains of Software Engineering, Cybersecurity, and Computer Science.
+The 692 studies retained after methodological screening were subjected to further analysis to determine whether they primarily addressed LLM evaluation within the predefined research domains of Software Engineering, Cybersecurity, and Computer Science.
 
-Studies that did not primarily address LLM evaluation within these domains were excluded.
+Studies that did not meet this domain-specific eligibility criterion were excluded because they fell outside the predefined scope of the review.
 
-The final selection comprised:
+The resulting selection was:
 
-- Studies assessed for domain-specific eligibility: **692**
-- Studies excluded for not meeting the predefined domain criteria: **397**
-- Final primary studies included: **295**
+| Selection Step | Number of Studies |
+|---|---:|
+| Studies assessed for domain-specific eligibility | 692 |
+| Studies excluded for not meeting the predefined domain criteria | 397 |
+| Studies retained for final inclusion | **295** |
 
-The resulting 295 studies constitute the final review corpus and provide the empirical foundation for the methodological synthesis, taxonomy construction, and analyses reported in the paper.
+### 4.6. Stage 6: Final Inclusion
 
-## 4. Relationship Between the Intermediate Datasets
+The final selection resulted in a corpus of **295 primary studies**, which constitutes the empirical foundation of the systematic literature review.
 
-The seven spreadsheets document the progression from the initial database searches to the final corpus. In particular, the relationship between the three refined datasets is as follows:
+Following the establishment of this corpus, an inductive qualitative analysis was conducted to examine the evaluation objectives, assessment mechanisms, validation procedures, datasets, and methodological characteristics reported across the included studies.
 
-| Dataset | Number of records | Selection stage |
-|---|---:|---|
-| `SpreadSheet-05.xlsx` | 2,006 | Unique records after removing 217 duplicates from the 2,223 records retained after relevance assessment. |
-| `SpreadSheet-06.xlsx` | 692 | Records retained after methodological eligibility assessment. |
-| `SpreadSheet-07.xlsx` | 295 | Final studies retained after domain-specific eligibility assessment. |
-
-Thus, the datasets represent successive stages of refinement rather than independent collections of studies.
-
-The numerical progression is:
-
-**2,223 records → 2,006 unique records → 692 studies → 295 final studies.**
-
-This progression allows readers to understand how duplicate removal and the subsequent eligibility criteria contributed to the construction of the final review corpus.
-
-## 5. Final Study Corpus and Research Analysis
-
-`SpreadSheet-07.xlsx` contains the final 295 primary studies included in the systematic literature review.
-
-These studies were examined to identify recurring evaluation objectives, assessment mechanisms, validation procedures, datasets, and methodological characteristics.
-
-Based on an inductive qualitative analysis of the final corpus, four principal evaluation paradigms were identified:
+This analysis revealed four recurring evaluation paradigms:
 
 1. **Human Evaluation**
 2. **Automated Evaluation**
 3. **Adversarial Evaluation**
 4. **Benchmark-Driven Evaluation**
 
-The taxonomy and its 23 subcategories were derived from recurring methodological patterns identified in the included studies rather than being predefined during the study selection process.
+The resulting taxonomy comprises four principal paradigms and 23 subcategories. These categories were derived inductively from recurring methodological patterns in the included studies rather than being predefined during the study selection process.
 
-The final corpus was subsequently used to conduct the comparative and quantitative analyses across Software Engineering, Cybersecurity, and Computer Science.
+## 5. Relationship Between the Intermediate Datasets
 
-## 6. PRISMA Flow Diagram
+The seven spreadsheets document the progression from the initial database searches to the final review corpus.
 
-The repository includes the PRISMA flow diagram illustrating the study identification, screening, eligibility assessment, duplicate removal, and final inclusion stages.
+The relationship between the refined datasets is summarized below:
 
-The diagram summarizes the numerical progression of the study selection process:
+| Dataset | Number of Records | Selection Stage |
+|---|---:|---|
+| `SpreadSheet-01.xlsx` to `SpreadSheet-04.xlsx` | — | Raw search results and bibliographic information from the four digital libraries. |
+| `SpreadSheet-05.xlsx` | 2,006 | Unique records after removing 217 duplicates from the 2,223 records retained following relevance assessment. |
+| `SpreadSheet-06.xlsx` | 692 | Studies retained after methodological eligibility assessment. |
+| `SpreadSheet-07.xlsx` | 295 | Final studies retained after domain-specific eligibility assessment. |
 
-| PRISMA stage | Description | Records |
+The three refined datasets represent successive stages of refinement rather than independent collections of studies.
+
+The numerical progression is:
+
+**10,079 records → 7,856 excluded → 2,223 records → 217 duplicates removed → 2,006 unique records → 1,314 excluded → 692 studies → 397 excluded → 295 final studies.**
+
+This progression explains how the relevance assessment, duplicate removal, methodological screening, and domain-specific eligibility criteria contributed to the construction of the final review corpus.
+
+## 6. Researcher Involvement
+
+The study selection and analysis involved different levels of researcher participation across the review stages.
+
+- **Initial identification and screening:** One researcher conducted the initial search-result identification and manual title-and-abstract screening using the saturation-based stopping rule.
+- **Subsequent assessment and data extraction:** Two researchers participated in the subsequent stages, including the assessment and extraction of study information.
+- **Final synthesis:** The final corpus of 295 studies provided the basis for the qualitative synthesis, taxonomy construction, and analyses reported in the manuscript.
+
+This distinction documents the researchers' involvement at the different stages without implying that the initial screening was independently conducted by multiple researchers.
+
+## 7. PRISMA Flow Diagram
+
+The repository includes the PRISMA-style flow diagram illustrating the complete study selection process, from initial database identification to final inclusion.
+
+The diagram summarizes the numerical progression across the six stages:
+
+| Stage | Description | Records |
 |---|---|---:|
-| Identification | Raw records retrieved from four digital libraries | 1,198,779 |
-| Relevance assessment | Consolidated records assessed for relevance to LLM evaluation | 10,079 |
+| Identification | Raw search results retrieved from four digital libraries | 1,198,779 |
+| Initial screening | Records examined and retained through the saturation-based procedure | 10,079 |
 | Relevance assessment | Records excluded as not relevant to LLM evaluation | 7,856 |
+| Relevance assessment | Records retained for further processing | 2,223 |
 | Duplicate removal | Duplicate records identified and removed | 217 |
 | Unique records | Records retained after duplicate removal | 2,006 |
 | Methodological eligibility | Studies excluded for not focusing on LLM evaluation methodologies | 1,314 |
@@ -166,24 +231,27 @@ The diagram summarizes the numerical progression of the study selection process:
 | Domain-specific eligibility | Studies excluded for not meeting the predefined domain criteria | 397 |
 | Final inclusion | Primary studies included in the review | **295** |
 
-**Note:** The 1,198,779 figure represents the total raw search results returned by the digital libraries. It does not represent the number of records individually examined during manual screening. The initial screening employed a saturation-based stopping rule.
+**Important clarification:** The figure of 1,198,779 represents the raw search-result counts reported by the four digital libraries. It does not represent the number of records individually examined by the researchers. The initial manual screening employed a saturation-based stopping rule and resulted in 10,079 records being retained for subsequent relevance assessment.
 
-## 7. Reproducibility and Transparency
+## 8. Reproducibility and Transparency
 
 The replication package is intended to support the verification of the study selection process and the findings reported in the manuscript.
 
 In particular, the repository provides:
 
-- Search-result spreadsheets and bibliographic information from the four digital libraries.
+- Raw search-result spreadsheets and bibliographic information from the four digital libraries.
+- The distribution of records retained from each digital library following initial screening.
 - Intermediate datasets documenting the successive study selection stages.
 - The unique records retained after duplicate identification and manual verification.
 - The datasets retained after methodological and domain-specific eligibility assessment.
 - The final corpus of 295 primary studies.
-- The PRISMA flow diagram summarizing the selection process.
+- The PRISMA flow diagram summarizing the complete selection process.
 
-The intermediate spreadsheets should be interpreted according to their respective stages in the selection process. The 2,006-record dataset, for example, represents the unique records remaining after duplicate removal, rather than the original 2,223 records retained following relevance assessment.
+The intermediate spreadsheets should be interpreted according to their respective stages in the selection process. For example, the 2,006-record dataset represents the unique records remaining after removing 217 duplicates from the 2,223 records retained following relevance assessment.
 
-## 8. Repository Access
+Together, these materials provide a transparent account of how the final corpus was established and how the included studies underpin the review's findings.
+
+## 9. Repository Access
 
 The replication package is publicly available at:
 
@@ -192,6 +260,6 @@ https://github.com/UbaidUllahResearch/LLMEvaluationSLR
 
 Researchers can use the provided datasets to inspect the study selection process, verify the final corpus, examine the methodological taxonomy, and extend the analysis to additional LLM evaluation studies.
 
-## 9. Contact
+## 10. Contact
 
 For questions, comments, or further information concerning the replication package and the systematic literature review, please contact the corresponding author.
