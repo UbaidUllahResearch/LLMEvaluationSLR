@@ -177,13 +177,11 @@ The diagram summarizes the numerical progression across the six stages:
 | Stage | Description | Records |
 |---|---|---:|
 | Identification | Raw search results retrieved from four digital libraries | 1,198,779 |
-| Screening | Records examined (10,079), Records excluded as not relevant to LLM evaluation (7,856), Records retained for further processing (2,223).
+| Screening | Records examined (10,079), Records excluded from 10,079 as not relevant to LLM evaluation (7,856), Records retained for further processing (2,223) | 2,223 |
 | Duplicate removal | Duplicate records identified and removed | 217 |
-| Eligibility | Records retained after duplicate removal (2,006), Studies excluded for not focusing on LLM evaluation methodologies (1,314).
-| In-Depth Analysis | Studies retained for domain-specific eligibility assessment (692), Studies excluded for not meeting the predefined domain criteria (397).
+| Eligibility | Records retained after duplicate removal (2,006), Studies excluded for not focusing on LLM evaluation methodologies (1,314). | 692 |
+| In-Depth Analysis | Studies retained for domain-specific eligibility assessment (692), Studies excluded for not meeting the predefined domain criteria (397).   | 295 |
 | Final inclusion | Primary studies included in the review | **295** |
-
-**Important clarification:** The figure of 1,198,779 represents the raw search-result counts reported by the four digital libraries. It does not represent the number of records individually examined by the researchers. The initial manual screening employed a saturation-based stopping rule and resulted in 10,079 records being retained for subsequent relevance assessment.
 
 ## 6. Reproducibility and Transparency
 
