@@ -157,24 +157,27 @@ Accordingly, SpreadSheet-07.xlsx contains the 295 studies.
 
 ## 3. Relationship Between the Intermediate Datasets
 
-The seven spreadsheets document the progression from the initial database searches to the final review corpus.
+The repository contains seven spreadsheets that document different aspects of the search and study selection process. However, the first four spreadsheets (`SpreadSheet-01.xlsx` to `SpreadSheet-04.xlsx`) contain **preliminary search results and bibliographic records**. These files are provided for reference and documentation purposes only. They do not constitute the actual datasets used in the systematic review analysis.
 
-The relationship between the refined datasets is summarized below:
+The actual study-selection datasets begin with `SpreadSheet-05.xlsx`, which contains the **2,006 unique records** retained after relevance assessment and duplicate removal. The subsequent spreadsheets represent successive stages of refinement, as summarized below.
 
-| Dataset | Number of Records | Selection Stage |
+| Dataset | Number of Records | Description |
 |---|---:|---|
-| `SpreadSheet-01.xlsx` to `SpreadSheet-04.xlsx` | — | Raw search results and bibliographic information from the four digital libraries. |
-| `SpreadSheet-05.xlsx` | 2,006 | Unique records after removing 217 duplicates from the 2,223 records retained following relevance assessment. |
+| `SpreadSheet-01.xlsx` to `SpreadSheet-04.xlsx` | Preliminary data | Raw search results and bibliographic records from the four digital libraries, provided for reference only. |
+| `SpreadSheet-05.xlsx` | 2,006 | Unique records retained after removing 217 duplicates from the 2,223 records retained following relevance assessment. |
 | `SpreadSheet-06.xlsx` | 692 | Studies retained after methodological eligibility assessment. |
-| `SpreadSheet-07.xlsx` | 295 | Final studies retained after domain-specific eligibility assessment. |
+| `SpreadSheet-07.xlsx` | 295 | Final corpus of primary studies retained after domain-specific eligibility assessment. |
 
-The three refined datasets represent successive stages of refinement rather than independent collections of studies.
+Accordingly, **`SpreadSheet-05.xlsx` marks the beginning of the actual study-selection dataset**, while `SpreadSheet-06.xlsx` and `SpreadSheet-07.xlsx` document its subsequent refinement. These three datasets represent successive stages of the same selection process rather than independent collections of studies.
 
-The numerical progression is:
+The numerical progression is as follows:
 
-**10,079 records → 7,856 excluded → 2,223 records → 217 duplicates removed → 2,006 unique records → 1,314 excluded → 692 studies → 397 excluded → 295 final studies.**
+For completeness, the initial relevance assessment began with 10,079 records, of which 7,856 were excluded as irrelevant to LLM evaluation, leaving 2,223 records for duplicate identification and subsequent processing. In these 2,223 records, 217 duplicates was removed, leaving 2,006 records for further processing.
 
-This progression explains how the relevance assessment, duplicate removal, methodological screening, and domain-specific eligibility criteria contributed to the construction of the final review corpus.
+**2,006 unique records → 1,314 studies excluded → 692 studies → 397 studies excluded → 295 final studies.**
+
+
+This distinction clarifies the role of the preliminary search files and establishes the relationship between the three principal datasets used in the systematic review.
 
 ## 4. PRISMA Flow Diagram
 
