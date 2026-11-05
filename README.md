@@ -199,8 +199,7 @@ The numerical progression is as follows:
 
 For completeness, the initial relevance assessment began with 10,079 records, of which 7,856 were excluded as irrelevant to LLM evaluation, leaving 2,223 records for duplicate identification and subsequent processing. In these 2,223 records, 217 duplicates was removed, leaving 2,006 records for further processing.
 
-**2,006 unique records → 1,314 studies excluded → 692 studies → 397 studies excluded → 295 final studies.**
-
+**2,223 records → 217 duplicated removed →2006 unique records →,006 unique records → 1,314 studies excluded → 692 studies → 397 studies excluded → 295 final studies.**
 
 This distinction clarifies the role of the preliminary search files and establishes the relationship between the three principal datasets used in the systematic review.
 
