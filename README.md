@@ -74,6 +74,13 @@ The distribution of these records was:
 Google Scholar contributed the largest number of retained records, partly because its indexing covers scholarly publications from multiple publishers and digital libraries. In contrast, platforms such as IEEE Xplore and ACM Digital Library primarily provide access to publications within their respective digital collections.
 Records excluded from 10,079 as not relevant to LLM evaluation are **7,856**, Records retained for further processing are **2,223**
 
+| Selection Step | Number of Records |
+|---|---:|
+| Non relevant record to LLM evaluation | 7,856 |
+| Record Left for further processing | **2,223** |
+
+
+
 
 ### 2.3. Duplicate Identification and Removal
 
