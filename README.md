@@ -26,7 +26,7 @@ The systematic search was conducted using **eight search-query variations** acro
 The repository includes the PRISMA-style workflow diagram illustrating the complete search strategy and selection process, from initial database identification to final inclusion. The diagram summarizes the numerical progression across the six stages:
 
 
-### 2.1. Initial Manual Identification Screening and Saturation-Based Stopping Rule
+### 2.1. Initial Identification Process
 
 The initial search returned **1,198,779 raw search results**, distributed across the four digital libraries as follows:
 
