@@ -60,7 +60,7 @@ These studies were excluded because their primary contributions concerned domain
 
 **Researcher involvement:** One researcher conducted the initial identification and title-and-abstract screening using the predefined review objectives and saturation-based stopping rule.
 
-### 2.2. Initial Screening
+### 2.2. Screening
 
 The **10,079 records** were retained and consolidated from the four digital libraries.
 
