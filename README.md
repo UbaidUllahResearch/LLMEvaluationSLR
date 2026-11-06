@@ -203,7 +203,7 @@ For completeness, the initial relevance assessment began with 10,079 records, of
 
 This distinction clarifies the role of the preliminary search files and establishes the relationship between the three principal datasets used in the systematic review.
 
-## 5. Reproducibility and Transparency
+## 4. Reproducibility and Transparency
 
 The replication package is intended to support the verification of the study selection process and the findings reported in the manuscript.
 
@@ -221,7 +221,7 @@ The intermediate spreadsheets should be interpreted according to their respectiv
 
 Together, these materials provide a transparent account of how the final corpus was established and how the included studies underpin the review's findings.
 
-## 6. Repository Access
+## 5. Repository Access
 
 The replication package is publicly available at:
 
@@ -230,6 +230,6 @@ https://github.com/UbaidUllahResearch/LLMEvaluationSLR
 
 Researchers can use the provided datasets to inspect the study selection process, verify the final corpus, examine the methodological taxonomy, and extend the analysis to additional LLM evaluation studies.
 
-## 7. Contact
+## 6. Contact
 
 For questions, comments, or further information concerning the replication package and the systematic literature review, please contact the corresponding author.
