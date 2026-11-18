@@ -41,7 +41,7 @@ The initial search returned **1,198,779 raw search results**, distributed across
 These figures represent the raw search-result counts reported by the respective digital libraries. The large retrieval volume resulted from the use of broad search strings intended to maximize coverage and reduce the likelihood of overlooking relevant publications. This was particularly evident in Google Scholar, which indexes scholarly publications from multiple publishers and research platforms and retrieves records through broad keyword matching across bibliographic information and indexed content. Consequently, its search results provide wider coverage than collections restricted to individual publishers or digital libraries.
 
 
-Given the exceptionally large retrieval volume, manually examining every raw search result was not practically feasible. Therefore, an initial manual screening strategy based on a **saturation-based stopping rule** was applied.
+Given the exceptionally large retrieval volume, examining every raw search result was not practically feasible. Therefore, an initial screening strategy based on a **saturation-based stopping rule** was applied.
 
 One researcher examined titles and abstracts from the search-result pages for each query and digital library. Screening proceeded from the initial result pages, where records were generally more closely aligned with LLM evaluation, towards subsequent pages, where the relevance of the results progressively declined.
 
